@@ -229,6 +229,120 @@ I work with data to uncover patterns, measure performance, identify inefficienci
     </ul>
 
 </section>
+
+<section>
+    <p>...</p>
+
+    <!-- Project 3: Transaction Reconciliation Engine -->
+    <h3 class="major">Transaction Reconciliation Engine</h3>
+
+    <p>
+        A data reconciliation solution built with Microsoft Excel and Power Query
+        to automate the comparison of internal transaction records against
+        external financial statements. The tool identifies matched transactions,
+        discrepancies, missing records, and duplicate entries, helping improve
+        financial data accuracy and reconciliation efficiency.
+    </p>
+
+    <h4>Problem</h4>
+
+    <p>
+        Comparing transactions across different financial records manually
+        can be time-consuming and prone to human error. Differences in
+        transaction amounts, dates, customer names, currencies, and other
+        fields can go unnoticed, potentially affecting financial reporting
+        and decision-making. The objective was to develop a reusable
+        reconciliation process that could systematically identify and
+        classify these exceptions.
+    </p>
+
+    <h4>Approach</h4>
+
+    <p>
+        I used Power Query to import, clean, standardize, and transform
+        both transaction datasets. I implemented duplicate detection,
+        merged the datasets using Transaction_ID as the primary matching
+        key, and applied field-level comparisons to identify discrepancies
+        in transaction amounts, dates, customer names, currencies,
+        transaction statuses, and channels.
+    </p>
+
+    <p>
+        I also used anti-join operations to identify transactions missing
+        from either dataset and developed reconciliation classifications
+        to distinguish matched, mismatched, missing, and duplicate records.
+        Finally, I created an Excel dashboard with KPI cards, charts,
+        and interactive slicers to summarize reconciliation results.
+    </p>
+
+    <h4>Key Findings</h4>
+
+    <p>
+        The reconciliation process evaluated 2,020 transaction records
+        and produced the following results:
+    </p>
+
+    <ul>
+        <li>1,788 matched transactions (88.51%).</li>
+        <li>127 mismatched transactions (6.29%).</li>
+        <li>60 transactions missing from Dataset B (2.97%).</li>
+        <li>20 transactions missing from Dataset A (0.99%).</li>
+        <li>25 records classified as duplicates in Dataset B (1.24%).</li>
+    </ul>
+
+    <p>
+        The analysis also identified 1,641 completed transactions,
+        226 pending transactions, and 153 reversed transactions.
+        These findings highlight the importance of validating transaction
+        records before relying on them for financial reporting.
+    </p>
+
+    <h4>Business Recommendations</h4>
+
+    <p>
+        Investigate mismatched records to identify the source of
+        discrepancies, trace missing transactions across both systems,
+        and review duplicate entries to prevent double counting.
+        Organizations should also establish a structured exception
+        resolution process and perform regular automated reconciliations
+        to strengthen data quality and financial reporting controls.
+    </p>
+
+    <h4>Impact</h4>
+
+    <p>
+        The project transformed a potentially manual reconciliation
+        process into a structured and reusable workflow. It provides
+        visibility into transaction inconsistencies, simplifies exception
+        identification, and supports more reliable financial reporting.
+        The interactive dashboard also enables users to monitor
+        reconciliation outcomes and transaction statuses efficiently.
+    </p>
+
+    <p>
+        <strong>Tools:</strong>
+        Microsoft Excel, Power Query
+    </p>
+
+    <!-- Project Image -->
+    <span class="image main">
+        <img
+            src="images/Screenshot 2026-11-18 042323.png"
+            alt="Transaction Reconciliation Engine Dashboard"
+        />
+    </span>
+
+    <!-- Project Link -->
+    <ul class="actions">
+        <li>
+            <a href="https://github.com/realOlatech/transaction-reconciliation-engine" class="button">
+                View Project
+            </a>
+        </li>
+    </ul>
+
+</section>
+	
 </article>
 
 						<!-- Contact -->
